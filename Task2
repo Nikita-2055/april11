@@ -1,0 +1,16 @@
+#include<stdio.h>
+int mul(int n){
+     if(n == 0 ){
+        return n;
+     }
+     return  (n % 10) * (n / 10);
+}
+
+int main(){
+    int n = 0;
+    printf("input number:");
+    scanf("%d",&n);
+    int res = mul(n);
+    printf("result: %d\n",res);
+    return 0;
+}
