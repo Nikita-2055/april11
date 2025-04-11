@@ -1,0 +1,15 @@
+#include<stdio.h>
+char function(int i,char *ch){
+    if(i != 5){
+        if(ch[i] >= 'A' && ch[i] <= 'Z'){
+            return ch[i];
+        }
+        return function(i + 1,ch);
+    }
+}
+int main(){
+    int i = 0;
+    char ch[] = "hElLo";
+    printf("%c", function(i,ch));
+    return 0;
+}
