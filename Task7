@@ -1,0 +1,15 @@
+#include<stdio.h>
+int function_add(int n){
+    if(n >= 0 && n <= 10){
+        return n;
+    }else{
+        return function_add(n % 10) + function_add(n / 10);
+    }
+}
+int main(){
+    int n = 0;
+    scanf("%d",&n);
+    int res = function_add(n);
+    printf("%d\n",res);
+    return 0;
+}
